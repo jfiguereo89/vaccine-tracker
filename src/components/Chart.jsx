@@ -1,17 +1,22 @@
-import React from 'react';
-import { Line } from 'react-chartjs-2';
+import React, { useContext } from 'react';
+import { UserContext } from '../store/UserContext';
 
-class Chart extends React.Component {
-  constructor(props) {
-    super(props);
-    this.chartReference = React.createRef();
-  }
-  componentDidMount() {
-    console.log(this.chartReference); //returns an instance of Chart.js instance reference
-  }
-  render() {
-    return <Line ref={this.chartReference} data={data} options={options} />;
-  }
-}
+import Chart from './Chart.jsx';
+import Vaccine from './Vaccine.jsx';
+import Login from './Login.jsx';
 
-export default Chart;
+export default () => {
+  const [user] = useContext(UserContext);
+
+  return user && user.loggedIn ? (
+    <div className="main-container">
+      <Vaccine />
+      <Chart />
+    </div>
+  ) : (
+    <div className="main-container">
+      <Login />
+      <Vaccine />
+    </div>
+  );
+};

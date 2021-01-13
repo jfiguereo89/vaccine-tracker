@@ -1,9 +1,8 @@
-import React, { useState, useEffect }  from "react";
-import Vaccine from './components/Vaccine.jsx'
+import React, { useState, useEffect } from 'react';
+import Vaccine from './components/Vaccine.jsx';
 import Login from './components/Login.jsx';
 
 const App = () => {
-
   return (
     <div className="App">
       <h1>App</h1>
@@ -13,6 +12,6 @@ const App = () => {
       <Login />
     </div>
   );
-}
+};
 
 export default App;
