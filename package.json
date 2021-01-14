@@ -2,7 +2,7 @@
   "name": "vaccine-tracker",
   "version": "1.0.0",
   "description": "Covid-19 Vaccination Tracker",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=production nodemon server/server.js",
@@ -23,7 +23,10 @@
   "keywords": [],
   "dependencies": {
     "body-parser": "^1.19.0",
+<<<<<<< HEAD
     "chart.js": "^2.9.4",
+=======
+>>>>>>> 7f8a5ee8c55fc3486d6a270c7bc9924eb8f0a66e
     "cookie-session": "^1.4.0",
     "csv-parser": "^3.0.0",
     "ejs": "^3.1.5",
@@ -36,7 +39,11 @@
     "pg": "^8.5.1",
     "postgres": "^1.0.2",
     "react": "^17.0.1",
+<<<<<<< HEAD
     "react-chartjs-2": "^2.11.1",
+=======
+    "react-cookie": "^4.0.3",
+>>>>>>> 7f8a5ee8c55fc3486d6a270c7bc9924eb8f0a66e
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "sass": "^1.29.0"
