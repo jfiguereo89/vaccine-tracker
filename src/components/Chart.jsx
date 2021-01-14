@@ -5,18 +5,18 @@ import Chart from './Chart.jsx';
 import Vaccine from './Vaccine.jsx';
 import Login from './Login.jsx';
 
-export default () => {
-  const [user] = useContext(UserContext);
+// export default () => {
+//   const [user] = useContext(UserContext);
 
-  return user && user.loggedIn ? (
-    <div className="main-container">
-      <Vaccine />
-      <Chart />
-    </div>
-  ) : (
-    <div className="main-container">
-      <Login />
-      <Vaccine />
-    </div>
-  );
-};
+// const Chart = () => {
+//   const chartReference = useRef();
+
+//   useEffect(() => {
+//     effect
+//     return () => {
+//       cleanup
+//     }
+//   }, [input])
+
+// }
+export default Chart;
